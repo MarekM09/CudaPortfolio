@@ -126,3 +126,52 @@ h1 {
 	margin-top: 60px;
 	line-height: 70px;
 }
+/* SERVICES SECTION */
+#services {
+	background-color: #17c2a4;
+}
+h2 {
+	font-size: 2.22rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+}
+.short-line {
+	width: 90px;
+	height: 4px;
+	background-color: #14a58c;
+	border: none;
+	margin: 0 auto;
+}
+.head-para {
+	width: 610px;
+	letter-spacing: 0.5px;
+	line-height: 1.38rem;
+	margin: 24px auto;
+}
+.row {
+	overflow: hidden;
+	margin-top: 80px;
+	padding: 0 10px;
+}
+.col-4-services {
+	width: 25%;
+	float: left;
+}
+.col-4-services img {
+	margin-bottom: 30px;
+}
+h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.33rem;
+	margin: 30px 0;
+}
+.serv-para {
+	font-size: 0.89rem;
+	font-weight: 300;
+	padding: 0 40px;
+	letter-spacing: 0.5px;
+	line-height: 1.33rem;
+}
