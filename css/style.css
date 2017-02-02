@@ -145,7 +145,7 @@ h2 {
 	margin: 0 auto;
 }
 .head-para {
-	width: 610px;
+	max-width: 630px;
 	letter-spacing: 0.5px;
 	line-height: 1.38rem;
 	margin: 24px auto;
@@ -166,12 +166,70 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.33rem;
-	margin: 30px 0;
+	margin-top: 30px;
 }
 .serv-para {
 	font-size: 0.89rem;
 	font-weight: 300;
 	padding: 0 40px;
+	margin-top: 30px;
 	letter-spacing: 0.5px;
 	line-height: 1.33rem;
+}
+/* TEAM SECTION */
+#team {
+	background-color: #e7f1f8;	
+}
+#team .container {
+	color: #3c4761;
+}
+.team-header .head-para {
+	max-width: 660px;
+}
+.team-header .short-line {
+	background-color: #c8d9e5;
+}
+.col-4-team {
+	width: 25%;
+	float: left;
+}
+.round-img {
+	display:inline-block;
+	width: 200px;
+	height: 200px;
+	background-color: #878787;
+	border-radius: 50%;
+	overflow: hidden;
+}
+h5 {
+	color: #48c1e9;
+	font-size: 0.89rem;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
+}
+.team-para {
+	height: 110px;
+	font-size: 0.89rem;
+	font-weight: 300;
+	padding: 0 40px;
+	margin-top: 25px;
+	letter-spacing: 0.5px;
+	line-height: 1.33rem;
+}
+.social-services {
+	margin-top: 20px;
+}
+.social-services a {
+	color: #ffffff;
+	width: 33px;
+	height: 33px;
+	background-color: #bdd1df;
+	border-radius: 50%;
+	display: inline-block;
+	padding-top: 8px;
+	margin: 5px;
+}
+.social-services a:hover {
+	color: #bdd1df;
+	background-color: #ffffff;
 }
