@@ -65,6 +65,12 @@ a {
 	display: block;
 	clear: both;
 }
+.padding-right-50 {
+	padding-right: 50px;
+}
+.padding-left-50 {
+	padding-left: 50px;
+}
 
 /* GENERAL RULES */
 * {
@@ -167,6 +173,7 @@ h3 {
 	font-weight: 700;
 	font-size: 1.33rem;
 	margin-top: 30px;
+	letter-spacing: 1px;
 }
 .serv-para {
 	font-size: 0.89rem;
@@ -279,4 +286,38 @@ h5 {
 	color: #ffffff;
 	background-color: #17c2a4;
 	border-bottom: 3px solid #14a58c;
+}
+#testimonials {
+	background-color: #d74680;
+}
+.testimonials-header .short-line {
+	background-color: #b73c6d;
+}
+.col-4-testim {
+	width: 50%;
+	float: left;
+}
+.client-photo {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color: #787878;
+	float: left;
+}
+blockquote {
+	padding-top: 10px;
+	letter-spacing: 0.5px;
+	font-size: 1.16rem;
+	line-height: 1.7rem;
+	font-family: 'Titillium Web', sans-serif;
+	font-style: italic;
+}
+.quote {
+	margin-left: 140px;
+	text-align: left;
+}
+h4 {
+	margin-top: 5px;
+	line-height: 1.33rem;
+	color: #ffdd99;
 }
