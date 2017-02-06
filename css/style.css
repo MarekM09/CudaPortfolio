@@ -233,3 +233,14 @@ h5 {
 	color: #bdd1df;
 	background-color: #ffffff;
 }
+/* SKILLS SECTION */
+#skills .container {
+	color: #3c4761;
+}
+.col-4-skills {
+	width: 25%;
+	float: left;
+}
+.progress-bar {
+	
+}
