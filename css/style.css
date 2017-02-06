@@ -334,6 +334,7 @@ form {
 	margin: 0 auto;
 	margin-top: 60px;
 	max-width: 860px;
+	position: relative;
 }
 input,
 textarea {
@@ -345,24 +346,47 @@ textarea {
 	background-color: #273a71;
 	padding: 20px 25px;
 }
+label {
+	font: inherit;
+	color: #ffffff;
+	position: absolute;	
+}
+label::after {
+	content: ' *';
+	color: #c54150;
+}
+.name-label {
+	left: 30px;
+	top: 25px;
+}
+.email-label {
+	left: 475px;
+	top: 25px;
+}
 textarea {
 	font: inherit;
 	width: 860px;
 	margin-top: 30px;
 }
+.textarea-label {
+	left: 30px;
+	top: 117px;
+}
+input:invalid + label {
+	display: inline-block;
+}
+input:valid + label {
+	display: none;
+}
+textarea:invalid + label {
+	display: inline-block;
+}
+textarea:valid + label {
+	display: none;
+}
 ::-webkit-resizer {
   background-image: url("../img/resize-icon.png");
   background-repeat: no-repeat;
-}
-::-webkit-input-placeholder { 
-    color: #ffffff;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #ffffff;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #ffffff;
 }
 form button {
 	color: #ffffff;
