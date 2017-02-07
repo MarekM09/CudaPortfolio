@@ -99,6 +99,9 @@ body {
 .logo {
 	margin-left: 40px;	
 }
+nav {
+	position: relative;
+}
 nav li {
 	display: inline-block;
 	line-height: 40px;
@@ -114,6 +117,30 @@ nav li {
 .top-nav a:hover {
 	background-color: #643a79;
 	transition: 0.3s;
+}
+.hamburger {
+	width: 30px;
+	height: 20px;
+	margin-right: 30px;
+	margin-top: 10px;
+	border: none;
+	border-top: 4px solid #ffffff;
+	position: relative;
+	background: transparent;
+	outline: 0;
+	display: none;
+}
+.hamburger::before, .hamburger::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 4px solid #ffffff; 
+	transform: translateY(14px);
+}
+.hamburger::after {
+	transform: translateY(5px);
 }
 h1 {
 	font-size: 2.33rem;
@@ -175,6 +202,7 @@ h2 {
 	float: left;
 }
 .col-4-services img {
+	height: 134px;
 	margin-bottom: 30px;
 }
 h3 {
@@ -217,6 +245,9 @@ h3 {
 	border-radius: 50%;
 	overflow: hidden;
 }
+.round-img img {
+	width: 100%;
+}
 h5 {
 	color: #48c1e9;
 	font-size: 0.89rem;
@@ -224,7 +255,6 @@ h5 {
 	letter-spacing: 0.5px;
 }
 .team-para {
-	height: 110px;
 	font-size: 0.89rem;
 	font-weight: 300;
 	padding: 0 40px;
@@ -452,4 +482,153 @@ footer .container {
 .social-list li:hover {
 	color: #30bae7;
 	transition: 0.3s;
+}
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1140px) {
+	.col-4-portfolio {
+		width: 50%;
+	}
+	.col-4-portfolio img {
+		width: 90%;
+	}
+	#portfolio .row {
+		width: 50%;
+    	float: left;
+		margin-bottom: 20px;
+	}
+	.row-container {
+		overflow: hidden;
+		padding: 0 40px;
+	}
+}
+@media only screen and (max-width: 990px) {
+	.round-img {
+		width: 150px;
+		height: 150px;
+	}
+	.padding-left-50 {
+		padding: 0 20px;
+	}
+	.padding-right-50 {
+		padding: 0 20px;
+	}
+	.team-para {
+		padding: 0 20px;
+	}
+	.social-services {
+		padding-top: 20px;
+	}
+	form {
+		max-width: 500px
+	}
+	input {
+		width: 240px;
+	}
+	textarea {
+		width: 500px;
+	}
+	.email-label {
+	left: 285px;
+	top: 25px;
+}
+}
+@media only screen and (max-width: 775px) {
+	.container {
+		padding: 60px 40px;
+	}
+	.col-4-services {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.col-4-team {
+		width: 100%;
+	}
+	.team-para {
+		padding: 0 100px;
+	}
+	.social-services {
+		margin-bottom: 30px;
+	}
+	.col-4-skills {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#portfolio .row {
+		width: 100%;
+		margin: 0;
+	}
+	.col-4-portfolio {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.proj-dsc {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+	.portfolio-nav {
+		margin-bottom: 50px;
+	}
+	#testimonials .row {
+		margin: 0;
+	}
+	.col-4-testim {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.margin-right-55 {
+		margin-right: 30px;
+		margin-bottom: 20px;
+	}
+	.hamburger {
+		display: block;
+	}
+	.hide {
+		display: none;
+	}
+	.hamburger:focus + .hide{
+		display: block;
+	}
+	.hide:hover {
+		display: block;
+	}
+	.top-nav li {
+		display: block;
+	}
+	.top-nav {
+		text-align: right;
+		position: absolute;
+		background-color: #724284;
+		top: 0;
+		right: 0;
+	}
+	.welcome-info {
+		margin: 60px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	form {
+		max-width: 100%;
+	}
+	input {
+		width: 100%;
+		padding: 10px 15px;
+		margin-bottom: 20px;
+	}
+	textarea {
+		width: 100%;
+		padding: 10px 15px;
+		margin: 0;
+	}
+	.name-label {
+		left: 20px;
+		top: 15px;
+	}
+	.email-label {
+		left: 20px;
+		top: 80px;
+	}
+	.textarea-label {
+		left: 20px;
+		top: 145px;
+	}
 }
