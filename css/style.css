@@ -145,6 +145,7 @@ nav li {
 h1 {
 	font-size: 2.33rem;
 	font-weight: 700;
+	line-height: 4rem;
 }
 .welcome-info {
 	margin: 120px;
@@ -533,6 +534,9 @@ footer .container {
 }
 }
 @media only screen and (max-width: 775px) {
+	.logo {
+	    margin-left: 10px;
+	}
 	.container {
 		padding: 60px 40px;
 	}
@@ -631,4 +635,45 @@ footer .container {
 		left: 20px;
 		top: 145px;
 	}
+	.team-para {
+		padding: 0;
+	}
+	.serv-para {
+		padding: 0;
+	}
+
+	h1 {
+		font-size: 1.77rem;
+		line-height: 3rem;
+	}
+	h2 {
+		font-size: 1.67rem;
+	}
+	.portfolio-nav a {
+		font-size: 0.89rem;
+		margin: 5px;
+		padding: 2px 15px;
+		text-transform: uppercase;
+		background-color: #ebc985;
+		border-radius: 4px;
+		transition: 0.3s;
+	}
+	.container {
+	    padding: 60px 10px;
+	}
+	.welcome-info {
+	    margin: 40px 10px;
+	}
+	.col-4-services img {
+	    margin: 0;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.client-photo {
+	    width: 70px;
+	    height: 70px;
+	}
+	.quote {
+    	margin-left: 80px;
+    }
 }
